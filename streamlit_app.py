@@ -28,7 +28,7 @@ with tabs[2]:
 
 # Tab 4: Volume Chart
 with tabs[3]:
-    st.subheader(f"🔴 Basic Circle Drawing App")
+    st.subheader(f"Something Fun")
 
     st.markdown(
     """
