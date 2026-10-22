@@ -30,23 +30,11 @@ with tabs[2]:
 with tabs[3]:
     st.subheader(f"🔴 Basic Circle Drawing App")
 
-    # Create a figure and axis
-    fig, ax = plt.subplots()
-
-    # Draw a circle at center (0.5, 0.5) with radius 0.3
-    circle = plt.Circle((0.5, 0.5), 0.3, color="red")
-    ax.add_patch(circle)
-
-    # Adjust plot limits and keep aspect ratio perfectly equal
-    ax.set_xlim(0, 1)
-    ax.set_ylim(0, 1)
-    ax.set_aspect("equal")
-
-    # Hide the grid axes lines for a clean look
-    ax.axis("off")
-    
-    # Display the drawing inside Streamlit
-    st.pyplot(fig)
-
-    # Display the plot in the Streamlit app
-    st.pyplot(fig)
+    st.markdown(
+    """
+    <svg width="200" height="200">
+        <circle cx="100" cy="100" r="80" stroke="green" stroke-width="4" fill="yellow" />
+    </svg>
+    """,
+    unsafe_allow_html=True
+)
