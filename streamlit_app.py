@@ -48,5 +48,5 @@ with tabs[3]:
     # Display the drawing inside Streamlit
     st.pyplot(fig)
 
-# Display the plot in the Streamlit app
-st.pyplot(fig)
+    # Display the plot in the Streamlit app
+    st.pyplot(fig)
